@@ -1,0 +1,137 @@
+.first-block {
+  background: #2e2f42;
+  max-width: 320px;
+  height: 432px;
+  margin: 0 auto;
+  padding: 72px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./../../images/mobile-x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .first-block {
+    background-image: url("./../../images/mobile-xx.jpg");
+  }
+}
+.title {
+  width: 288px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.modal-btn {
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+  background: #4d5ae5;
+  margin-top: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-btn:hover {
+    background-color: #404bbf;
+  }
+
+  .modal-btn:focus {
+    background-color: #404bbf;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first-block {
+    max-width: 768px;
+    height: 436px;
+    padding: 136px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/talet-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .first-block {
+      background-image: url("./../../images/talet-bg@2x.jpg");
+    }
+  }
+  .title {
+    font-size: 56px;
+    line-height: 1.07; /* 107.143% */
+    letter-spacing: 1.12px;
+    max-width: 496px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .first-block {
+    background: #2e2f42;
+    max-width: 1440px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .first-block {
+    background-image: url("./../../images/Dark-bg@2x.jpg");
+  }
+  }
+
+  .title {
+    color: #fff;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 1.07; /* 107.143% */
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
