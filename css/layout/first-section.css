@@ -1,6 +1,6 @@
 .first-block {
   background: #2e2f42;
-  max-width: 320px;
+  max-width: 767px;
   height: 432px;
   margin: 0 auto;
   padding: 72px 0;
@@ -14,14 +14,17 @@
   background-position: center;
   background-size: cover;
 }
-
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .first-block {
-    background-image: url("./../../images/mobile-xx.jpg");
-  }
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+    url("./../../images/mobile-xx.jpg");
 }
+  
 .title {
   width: 288px;
   color: #fff;
@@ -66,36 +69,46 @@
   }
 }
 
+/* for tablet */
+
 @media screen and (min-width: 768px) {
   .first-block {
-    max-width: 768px;
+    max-width: 1157px;
     height: 436px;
     padding: 136px 0;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+    url(../../images/talet-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .first-block {
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ),
-      url(../../images/talet-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        ),
+    url("./../../images/talet-bg@2x.jpg");
   }
-
-  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .first-block {
-      background-image: url("./../../images/talet-bg@2x.jpg");
-    }
-  }
+}
+  
   .title {
     font-size: 56px;
     line-height: 1.07; /* 107.143% */
     letter-spacing: 1.12px;
-    max-width: 496px;
+    width: 496px;
+    padding: 0;
   }
 }
+
+/* for desktop */
 
 @media screen and (min-width: 1158px) {
   .first-block {
@@ -109,7 +122,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(./../../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -118,7 +131,12 @@
   screen and (min-resolution: 2dppx) and (min-width: 1158px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
   .first-block {
-    background-image: url("./../../images/Dark-bg@2x.jpg");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+    url("./../../images/Dark-bg@2x.jpg");
   }
   }
 
@@ -132,6 +150,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
 
 }
