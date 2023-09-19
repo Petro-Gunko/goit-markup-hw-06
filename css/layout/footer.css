@@ -10,19 +10,33 @@
     flex-direction: column;
     align-items: baseline;
   }
+  .container-footer-logo {
+    text-align: center;
+    margin-bottom: 72px;
+  }
   
   .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
   }
+
+  .container-social-footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+
+  }
   .studio-footer {
     color: #f4f4fd;
+    margin-bottom: 16px;
   }
   .text-footer {
     color: #f4f4fd;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.32px;
     width: 264px;
+    text-align: left;
   }
 
   .social-footer {
@@ -56,9 +70,52 @@
     background-color: #4d5ae5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .button-form-footer {
-    min-width: 165px;
+  .link-social-footer:hover,
+  .link-social-footer:focus {
+    background-color: #31d0aa;
+  }
+  .footer-socials-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: #f4f4fd;
+  }
+
+  .container-form-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .text-modal-email {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  .modal-email-form {
+    width: 264px;
     height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .button-form-footer {
+    min-width: 117px;
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +134,37 @@
   .img-btn-form-footer {
     margin-left: 16px;
     fill: #fff;
+  }
+
+    /* for tablet */
+
+@media screen and (min-width: 768px) {
+    .contaniner-footer {
+        display: flex;
+        
+        align-items: baseline;
+      }
+      .container-footer-logo {
+        display: inline;
+        text-align: center;
+        margin-bottom: 72px;
+      }
+      
+
+      .container-social-footer {
+        display: inline;
+        margin-bottom: 72px;
+    
+      }
+      .container-form-footer {
+        text-align: center;
+        display: flex;
+        display: block;
+        
+        
+      }
+
+}
 
 /* .footer-style {
     flex-shrink: 0;
@@ -97,9 +185,9 @@
   .text-footer {
     color: #f4f4fd;
     line-height: 1.5; /* 150% */
-    letter-spacing: 0.32px;
+    /* letter-spacing: 0.32px;
     width: 264px;
-  } */
+  } */ */
   /* .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
@@ -113,9 +201,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.5; /* 150% */
-    letter-spacing: 0.02em;
+    /* letter-spacing: 0.02em;
     margin-bottom: 16px;
-  } */
+  } */ */
   /* .list-socials-footer {
     display: flex;
     gap: 16px;
