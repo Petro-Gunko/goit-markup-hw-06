@@ -45,9 +45,9 @@
     padding-bottom: 96px;
   }
   .list-items {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 72px 23px;
   }
 
   .items {

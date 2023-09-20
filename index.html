@@ -139,11 +139,12 @@
       <!-- section3 -->
 
       <section class="team-section">
-        <div class="container">
+        <div class="container team-section-container">
           <h2 class="title-team">Our Team</h2>
           <ul class="team-list">
             <li class="team-link-list">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <img srcset="./images/mark@2x.jpg 2x" 
+              src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
               <div class="names-end-profesions">
                 <h3 class="names-our-team">Mark Guerrero</h3>
                 <p class="profession-our-team">Product Designer</p>
@@ -180,7 +181,8 @@
               </div>
             </li>
             <li class="team-link-list">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              <img srcset="./images/tom@2x.jpg 2x" 
+              src="./images/tom.jpg" alt="Tom Ford" width="264" />
               <div class="names-end-profesions">
                 <h3 class="names-our-team">Tom Ford</h3>
                 <p class="profession-our-team">Frontend Developer</p>
@@ -217,7 +219,8 @@
               </div>
             </li>
             <li class="team-link-list">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <img srcset="./images/camila@2x.jpg 2x" 
+              src="./images/camila.jpg" alt="Camila Garcia" width="264" />
               <div class="names-end-profesions">
                 <h3 class="names-our-team">Camila Garcia</h3>
                 <p class="profession-our-team">Marketing</p>
@@ -254,7 +257,8 @@
               </div>
             </li>
             <li class="team-link-list">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <img srcset="./images/daniel@2x.jpg 2x" 
+              src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
               <div class="names-end-profesions">
                 <h3 class="names-our-team">Daniel Wilson</h3>
                 <p class="profession-our-team">UI Designer</p>
@@ -303,7 +307,14 @@
             <li class="list-iteams-portfolio">
               <div class="section-portfolio-img">
                 <img
-                  src="./images/banking.jpg"
+                srcset="
+                ./images/banking@2x.png 600w,
+                ./images/banking.jpg  300w,
+                ./images/banking-table@2x.jpg 2x  ,
+                ./images/banking-table.jpg  ,
+                ./images/banking-mob.jpg 2x  ,
+                ./images/banking-mob@2x.jpg 2x"  
+                  src="./images/banking.jpg"  
                   alt="Banking"
                   width="360"
                   height="300"
@@ -322,7 +333,8 @@
             <li class="list-iteams-portfolio">
               <div class="section-portfolio-img">
                 <img
-                  src="./images/nfs.jpg"
+                srcset="./images/nfs-mob@2x.jpg 2x" 
+                  src="./images/nfs-mob.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -341,7 +353,8 @@
             <li class="list-iteams-portfolio">
               <div class="section-portfolio-img">
                 <img
-                  src="./images/laptop.jpg"
+                srcset="./images/laptop-mob@2x.jpg 2x" 
+                  src="./images/laptop-mob.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -360,7 +373,8 @@
             <li class="list-iteams-portfolio">
               <div class="section-portfolio-img">
                 <img
-                  src="./images/drive.jpg"
+                srcset="./images/drive-mob@2x.jpg 2x" 
+                  src="./images/drive-mob.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -379,7 +393,8 @@
             <li class="list-iteams-portfolio">
               <div class="section-portfolio-img">
                 <img
-                  src="./images/phone.jpg"
+                srcset="./images/phone-mob@2x.jpg 2x" 
+                  src="./images/phone-mob.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -398,7 +413,8 @@
             <li class="list-iteams-portfolio">
               <div class="section-portfolio-img">
                 <img
-                  src="./images/orange-style.jpg"
+                srcset="./images/orange-style-mob@2x.jpg 2x" 
+                  src="./images/orange-style-mob.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -576,70 +592,73 @@
     </div>
     <!-- mobail menu -->
     <div class="mobile-menu">
-      <button class="btn-mobaile-close" type="button">
-        <svg class="img-btn-mobaile" width="8" height="8">
-          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-        </svg>
-      </button>
-      <ul class="list-main-mobile-menu">
-        <li class="item-list-mobile-menu">
-          <a class="link-mobile-menu" href="./index.html"
-            >Studio
-          </a>
-        </li>
-        <li class="item-list-mobile-menu">
-          <a class="link-mobile-menu" href="">Portfolio</a>
-        </li>
-        <li class="item-list-mobile-menu">
-          <a class="link-mobile-menu" href="">Contacts</a>
-        </li>
-      </ul>
-
-      <address class="contacts-mobile-menu">
-        <ul class="contacts-link-mobile">
-          <li class="address-contacts-mobile-menu">
-            <a class="link-contacts-mobile" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+      <div class="mobile-menu-container">
+        <button class="btn-mobaile-close" type="button">
+          <svg class="img-btn-mobaile" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <ul class="list-main-mobile-menu">
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu" href="./index.html"
+              >Studio
+            </a>
           </li>
-          <li class="address-contacts-mobile-menu">
-            <a class="link-contacts-mobile" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu" href="">Portfolio</a>
+          </li>
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu" href="">Contacts</a>
           </li>
         </ul>
-      </address>
-
-      <ul class="list-socials-mobile">
-        <li class="item-socials-mobile">
-          <a class="link-social-mobile" href="">
-            <svg class="mobile-socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-socials-mobile">
-          <a class="link-social-mobile" href="">
-            <svg class="mobile-socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-socials-mobile">
-          <a class="link-social-mobile" href="">
-            <svg class="mobile-socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item-socials-mobile">
-          <a class="link-social-mobile" href="">
-            <svg class="mobile-socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+  
+        <address class="contacts-mobile-menu">
+          <ul class="contacts-link-mobile">
+            <li class="address-contacts-mobile-menu">
+              <a class="link-contacts-mobile" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-contacts-mobile-menu">
+              <a class="link-contacts-mobile" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+  
+        <ul class="list-socials-mobile">
+          <li class="item-socials-mobile">
+            <a class="link-social-mobile" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-socials-mobile">
+            <a class="link-social-mobile" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-socials-mobile">
+            <a class="link-social-mobile" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-socials-mobile">
+            <a class="link-social-mobile" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+    
   </body>
 </html>
