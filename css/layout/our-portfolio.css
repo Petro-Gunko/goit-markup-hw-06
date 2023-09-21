@@ -82,6 +82,6 @@
     gap: 48px 24px;
   }
   .list-iteams-portfolio {
-    width: calc((100% - 72px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 }
