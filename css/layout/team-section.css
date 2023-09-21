@@ -93,14 +93,14 @@
 .team-section {
     
     padding: 96px 0;
-    background-color: #ffffff;
+    background-color: #f4f4fd;
 }
 
 .team-list {
     flex-flow: row wrap;
     justify-content: center;
     gap: 64px 24px;
-    background-color: #ffffff;
+    background-color: #f4f4fd;
 }
 .team-link-list {
   max-width: 356px;

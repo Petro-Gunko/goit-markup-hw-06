@@ -151,6 +151,9 @@
     margin-bottom: 24px;
   }
   .checkbox-form-label {
+    display: flex;
+    align-items: center;
+    
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -168,9 +171,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     fill: transparent;
     margin-right: 8px;
     cursor: pointer;
+    display: inline-block;
+    align-items: center;
   }
   
   .checkbox-form-input:checked + .checkbox-form-label > .checkbox-form-own {
