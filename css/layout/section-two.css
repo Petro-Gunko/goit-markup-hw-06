@@ -47,11 +47,13 @@
   .list-items {
     flex-flow: row wrap;
     justify-content: center;
-    gap: 72px 23px;
+    gap: 72px 24px;
+    
   }
 
   .items {
     max-width: 356px;
+    width: calc((100% - 24px) / 2)
 }
 
   .soft-skills {
