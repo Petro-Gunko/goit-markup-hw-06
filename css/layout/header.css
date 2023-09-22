@@ -79,6 +79,9 @@
 .link-mobile-menu {
   color: #2E2F42;
 }
+.current {
+  color: #404bbf;
+}
 .link-mobile-menu:focus,
 .link-mobile-menu:hover {
   color: #404bbf;
@@ -95,6 +98,9 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2; /* 120% */
 letter-spacing: 0.4px;
+}
+.currents {
+  color: #4D5AE5;
 }
 .link-contacts-mobile:focus,
 .link-contacts-mobile:hover {
